@@ -51,7 +51,9 @@ class ScreenSyllabus extends StatelessWidget {
                 ],
               ),
               kHeight50,
-              InkWell(
+              CustomSemButton(
+                size: size,
+                text: 'Semester I',
                 onTap: () {
                   Navigator.push(
                     context,
@@ -60,17 +62,11 @@ class ScreenSyllabus extends StatelessWidget {
                     ),
                   );
                 },
-                child: CustomSemButton(
-                  size: size,
-                  text: 'Semester I',
-                ),
               ),
               kHeight20,
-              InkWell(
-                child: CustomSemButton(
-                  size: size,
-                  text: 'Semester II',
-                ),
+              CustomSemButton(
+                size: size,
+                text: 'Semester II',
                 onTap: () {
                   Navigator.push(
                     context,
@@ -81,11 +77,9 @@ class ScreenSyllabus extends StatelessWidget {
                 },
               ),
               kHeight20,
-              InkWell(
-                child: CustomSemButton(
-                  size: size,
-                  text: 'Semester III',
-                ),
+              CustomSemButton(
+                size: size,
+                text: 'Semester III',
                 onTap: () {
                   Navigator.push(
                     context,
@@ -97,43 +91,22 @@ class ScreenSyllabus extends StatelessWidget {
                 },
               ),
               kHeight20,
-              InkWell(
-                child: CustomSemButton(
-                  size: size,
-                  text: 'Semester IV',
-                ),
-                onTap: () {
-                  // Navigator.push(
-                  //     context,
-                  //     MaterialPageRoute(
-                  //         builder: (context) => )));
-                },
+              CustomSemButton(
+                size: size,
+                text: 'Semester IV',
+                onTap: () {},
               ),
               kHeight20,
-              InkWell(
-                child: CustomSemButton(
-                  size: size,
-                  text: 'Semester V',
-                ),
-                onTap: () {
-                  // Navigator.push(
-                  //     context,
-                  //     MaterialPageRoute(
-                  //         builder: (context) => )));
-                },
+              CustomSemButton(
+                size: size,
+                text: 'Semester V',
+                onTap: () {},
               ),
               kHeight20,
-              InkWell(
-                child: CustomSemButton(
-                  size: size,
-                  text: 'Semester VI',
-                ),
-                onTap: () {
-                  // Navigator.push(
-                  //     context,
-                  //     MaterialPageRoute(
-                  //         builder: (context) => )));
-                },
+              CustomSemButton(
+                size: size,
+                text: 'Semester VI',
+                onTap: () {},
               ),
             ],
           ),

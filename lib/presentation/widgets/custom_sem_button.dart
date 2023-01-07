@@ -6,10 +6,12 @@ class CustomSemButton extends StatelessWidget {
     Key? key,
     required this.size,
     required this.text,
+    required this.onTap,
   }) : super(key: key);
 
   final Size size;
   final String text;
+  final VoidCallback onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -43,13 +45,7 @@ class CustomSemButton extends StatelessWidget {
                   fontWeight: FontWeight.w600),
             ),
             InkWell(
-              onTap: () {
-                // Navigator.push(
-                //   context,
-                //   MaterialPageRoute(
-                //       builder: (context) => const ViewIaMarks()),
-                // );
-              },
+              onTap: onTap,
               child: Container(
                 width: 70,
                 height: 35,
