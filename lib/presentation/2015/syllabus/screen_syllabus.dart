@@ -1,11 +1,13 @@
 import 'package:che/core/const.dart';
 import 'package:che/core/theme_color.dart';
+import 'package:che/presentation/2015/syllabus/widget/sem_five.dart';
+import 'package:che/presentation/2015/syllabus/widget/sem_four.dart';
+import 'package:che/presentation/2015/syllabus/widget/sem_one.dart';
+import 'package:che/presentation/2015/syllabus/widget/sem_six.dart';
 import 'package:che/presentation/2015/syllabus/widget/sem_three.dart';
 import 'package:che/presentation/2015/syllabus/widget/sem_two.dart';
 import 'package:che/presentation/widgets/custom_sem_button.dart';
 import 'package:flutter/material.dart';
-
-import 'widget/sem_one.dart';
 
 class ScreenSyllabus extends StatelessWidget {
   const ScreenSyllabus({
@@ -58,7 +60,8 @@ class ScreenSyllabus extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const SemOne(text: 'Semester I'),
+                      builder: (context) =>
+                          const SemOneSyllabs(text: 'Semester I'),
                     ),
                   );
                 },
@@ -71,7 +74,8 @@ class ScreenSyllabus extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const SemTwo(text: 'Semester II'),
+                      builder: (context) =>
+                          const SemTwoSyllabs(text: 'Semester II'),
                     ),
                   );
                 },
@@ -85,7 +89,7 @@ class ScreenSyllabus extends StatelessWidget {
                     context,
                     MaterialPageRoute(
                       builder: (context) =>
-                          const SemThree(text: 'Semester III'),
+                          const SemThreeSyllabs(text: 'Semester III'),
                     ),
                   );
                 },
@@ -94,19 +98,43 @@ class ScreenSyllabus extends StatelessWidget {
               CustomSemButton(
                 size: size,
                 text: 'Semester IV',
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) =>
+                          const SemFourSyllabs(text: 'Semester IV'),
+                    ),
+                  );
+                },
               ),
               kHeight20,
               CustomSemButton(
                 size: size,
                 text: 'Semester V',
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) =>
+                          const SemFiveSyllabs(text: 'Semester V'),
+                    ),
+                  );
+                },
               ),
               kHeight20,
               CustomSemButton(
                 size: size,
                 text: 'Semester VI',
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) =>
+                          const SemSixSyllabs(text: 'Semester VI'),
+                    ),
+                  );
+                },
               ),
             ],
           ),

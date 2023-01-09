@@ -165,7 +165,9 @@ class ScreenAbout extends StatelessWidget {
                     ],
                   ),
                   onTap: () async {
+                    // ignore: deprecated_member_use
                     await canLaunch(devurl)
+                        // ignore: deprecated_member_use
                         ? await launch(devurl)
                         : throw 'Could not launch $devurl';
                   },

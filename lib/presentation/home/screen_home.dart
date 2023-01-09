@@ -15,52 +15,48 @@ class ScreenHome extends StatelessWidget {
       child: Scaffold(
         body: SafeArea(
           child: Padding(
-            padding: const EdgeInsets.all(10.0),
+            padding: const EdgeInsets.symmetric(vertical: 10),
             child: Column(
               children: [
                 kHeight,
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    const Text(
-                      'Hey, there!',
-                      style: TextStyle(
-                        color: ThemeColor.black,
-                        fontSize: 26,
-                        fontWeight: FontWeight.bold,
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 10),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: const [
+                      Text(
+                        'Study struggle',
+                        style: TextStyle(
+                          color: ThemeColor.black,
+                          fontSize: 30,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
-                    ),
-                    Container(
-                      decoration: BoxDecoration(
-                          color: ThemeColor.lightGrey,
-                          borderRadius: BorderRadius.circular(12)),
-                      padding: const EdgeInsets.all(12),
-                      child: const Icon(
-                        Icons.notifications,
-                        color: Colors.white,
-                      ),
-                    ),
-                  ],
-                ),
-                kHeight,
-                const SegmentedTabControl(
-                  height: 50,
-                  radius: Radius.circular(10),
-                  backgroundColor: ThemeColor.lightGrey,
-                  indicatorColor: ThemeColor.primary,
-                  tabTextColor: ThemeColor.black,
-                  selectedTabTextColor: ThemeColor.white,
-                  textStyle: TextStyle(
-                    fontWeight: FontWeight.w500,
+                    ],
                   ),
-                  tabs: [
-                    SegmentTab(
-                      label: "Rev 2015",
+                ),
+                kHeight30,
+                const Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 10),
+                  child: SegmentedTabControl(
+                    height: 50,
+                    radius: Radius.circular(10),
+                    backgroundColor: ThemeColor.lightGrey,
+                    indicatorColor: ThemeColor.primary,
+                    tabTextColor: ThemeColor.black,
+                    selectedTabTextColor: ThemeColor.white,
+                    textStyle: TextStyle(
+                      fontWeight: FontWeight.w500,
                     ),
-                    SegmentTab(
-                      label: "Rev 2021",
-                    ),
-                  ],
+                    tabs: [
+                      SegmentTab(
+                        label: "Rev 2015",
+                      ),
+                      SegmentTab(
+                        label: "Rev 2021",
+                      ),
+                    ],
+                  ),
                 ),
                 const Expanded(
                   child: TabBarView(

@@ -1,12 +1,12 @@
 import 'package:che/core/const.dart';
 import 'package:che/core/pdf/syllabus15_pdf_path.dart';
 import 'package:che/core/theme_color.dart';
-import 'package:che/presentation/widgets/custom_sub_button.dart';
 import 'package:che/presentation/widgets/pdf_viewer.dart';
+import 'package:che/presentation/widgets/custom_sub_button.dart';
 import 'package:flutter/material.dart';
 
-class SemTwoSyllabs extends StatelessWidget {
-  const SemTwoSyllabs({
+class SemFourSyllabs extends StatelessWidget {
+  const SemFourSyllabs({
     super.key,
     required this.text,
   });
@@ -60,15 +60,15 @@ class SemTwoSyllabs extends StatelessWidget {
                             context,
                             MaterialPageRoute(
                               builder: (context) => const PdfViewer(
-                                src: Syllabus15PdfPath.english2,
+                                src: Syllabus15PdfPath.mpAndi,
                               ),
                             ),
                           );
                         },
                         child: CustomSubButton(
                           size: size,
-                          coursename: 'English for Communication II',
-                          coursecode: '2001',
+                          coursename: 'Microprocessors and Interfacing',
+                          coursecode: '4151',
                         ),
                       ),
                       kHeight20,
@@ -78,15 +78,15 @@ class SemTwoSyllabs extends StatelessWidget {
                             context,
                             MaterialPageRoute(
                               builder: (context) => const PdfViewer(
-                                src: Syllabus15PdfPath.maths2,
+                                src: Syllabus15PdfPath.os,
                               ),
                             ),
                           );
                         },
                         child: CustomSubButton(
                           size: size,
-                          coursename: 'Engineering Mathematics II',
-                          coursecode: '2002',
+                          coursename: 'Operating Systems',
+                          coursecode: '4134',
                         ),
                       ),
                       kHeight20,
@@ -96,15 +96,15 @@ class SemTwoSyllabs extends StatelessWidget {
                             context,
                             MaterialPageRoute(
                               builder: (context) => const PdfViewer(
-                                src: Syllabus15PdfPath.physics2,
+                                src: Syllabus15PdfPath.ds,
                               ),
                             ),
                           );
                         },
                         child: CustomSubButton(
                           size: size,
-                          coursename: 'Engineering Physics II',
-                          coursecode: '2003',
+                          coursename: 'Data Structures',
+                          coursecode: '4133',
                         ),
                       ),
                       kHeight20,
@@ -114,15 +114,15 @@ class SemTwoSyllabs extends StatelessWidget {
                             context,
                             MaterialPageRoute(
                               builder: (context) => const PdfViewer(
-                                src: Syllabus15PdfPath.chemistry2,
+                                src: Syllabus15PdfPath.csh,
                               ),
                             ),
                           );
                         },
                         child: CustomSubButton(
                           size: size,
-                          coursename: 'Engineering Chemistry II',
-                          coursecode: '2004',
+                          coursename: 'Computer System Hardware',
+                          coursecode: '4131',
                         ),
                       ),
                       kHeight20,
@@ -132,15 +132,15 @@ class SemTwoSyllabs extends StatelessWidget {
                             context,
                             MaterialPageRoute(
                               builder: (context) => const PdfViewer(
-                                src: Syllabus15PdfPath.graphics2,
+                                src: Syllabus15PdfPath.saLab,
                               ),
                             ),
                           );
                         },
                         child: CustomSubButton(
                           size: size,
-                          coursename: 'Engineering Graphics',
-                          coursecode: '2005',
+                          coursename: 'System Administration Lab',
+                          coursecode: '4139',
                         ),
                       ),
                       kHeight20,
@@ -150,15 +150,15 @@ class SemTwoSyllabs extends StatelessWidget {
                             context,
                             MaterialPageRoute(
                               builder: (context) => const PdfViewer(
-                                src: Syllabus15PdfPath.programingc,
+                                src: Syllabus15PdfPath.dsLab,
                               ),
                             ),
                           );
                         },
                         child: CustomSubButton(
                           size: size,
-                          coursename: 'Programming in C',
-                          coursecode: '2131',
+                          coursename: 'Data Structures Lab',
+                          coursecode: '4138',
                         ),
                       ),
                       kHeight20,
@@ -168,15 +168,15 @@ class SemTwoSyllabs extends StatelessWidget {
                             context,
                             MaterialPageRoute(
                               builder: (context) => const PdfViewer(
-                                src: Syllabus15PdfPath.workshop,
+                                src: Syllabus15PdfPath.cshLab,
                               ),
                             ),
                           );
                         },
                         child: CustomSubButton(
                           size: size,
-                          coursename: 'Workshop Practice',
-                          coursecode: '2008',
+                          coursename: 'Computer System Hardware Lab',
+                          coursecode: '4137',
                         ),
                       ),
                       kHeight20,
@@ -186,51 +186,15 @@ class SemTwoSyllabs extends StatelessWidget {
                             context,
                             MaterialPageRoute(
                               builder: (context) => const PdfViewer(
-                                src: Syllabus15PdfPath.lifeskill,
+                                src: Syllabus15PdfPath.miniproject,
                               ),
                             ),
                           );
                         },
                         child: CustomSubButton(
                           size: size,
-                          coursename: 'Life Skill',
-                          coursecode: '2009',
-                        ),
-                      ),
-                      kHeight20,
-                      InkWell(
-                        onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => const PdfViewer(
-                                src: Syllabus15PdfPath.sciencelab,
-                              ),
-                            ),
-                          );
-                        },
-                        child: CustomSubButton(
-                          size: size,
-                          coursename: 'Engineering Science Lab I',
-                          coursecode: '2007',
-                        ),
-                      ),
-                      kHeight20,
-                      InkWell(
-                        onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => const PdfViewer(
-                                src: Syllabus15PdfPath.clab,
-                              ),
-                            ),
-                          );
-                        },
-                        child: CustomSubButton(
-                          size: size,
-                          coursename: 'Programming in C Lab',
-                          coursecode: '2139	',
+                          coursename: 'Mini Project',
+                          coursecode: '4009',
                         ),
                       ),
                     ],

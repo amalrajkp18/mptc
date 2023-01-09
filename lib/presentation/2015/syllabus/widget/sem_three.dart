@@ -5,8 +5,8 @@ import 'package:che/presentation/widgets/pdf_viewer.dart';
 import 'package:che/presentation/widgets/custom_sub_button.dart';
 import 'package:flutter/material.dart';
 
-class SemThree extends StatelessWidget {
-  const SemThree({
+class SemThreeSyllabs extends StatelessWidget {
+  const SemThreeSyllabs({
     super.key,
     required this.text,
   });
@@ -60,7 +60,7 @@ class SemThree extends StatelessWidget {
                             context,
                             MaterialPageRoute(
                               builder: (context) => const PdfViewer(
-                                src: Syllabus15PdfPath.english1,
+                                src: Syllabus15PdfPath.dcp,
                               ),
                             ),
                           );
@@ -78,7 +78,7 @@ class SemThree extends StatelessWidget {
                             context,
                             MaterialPageRoute(
                               builder: (context) => const PdfViewer(
-                                src: Syllabus15PdfPath.maths1,
+                                src: Syllabus15PdfPath.oops,
                               ),
                             ),
                           );
@@ -96,7 +96,7 @@ class SemThree extends StatelessWidget {
                             context,
                             MaterialPageRoute(
                               builder: (context) => const PdfViewer(
-                                src: Syllabus15PdfPath.physics1,
+                                src: Syllabus15PdfPath.ca,
                               ),
                             ),
                           );
@@ -114,7 +114,7 @@ class SemThree extends StatelessWidget {
                             context,
                             MaterialPageRoute(
                               builder: (context) => const PdfViewer(
-                                src: Syllabus15PdfPath.chemistry1,
+                                src: Syllabus15PdfPath.dc,
                               ),
                             ),
                           );
@@ -132,7 +132,7 @@ class SemThree extends StatelessWidget {
                             context,
                             MaterialPageRoute(
                               builder: (context) => const PdfViewer(
-                                src: Syllabus15PdfPath.graphics,
+                                src: Syllabus15PdfPath.esdm,
                               ),
                             ),
                           );
@@ -151,7 +151,7 @@ class SemThree extends StatelessWidget {
                             context,
                             MaterialPageRoute(
                               builder: (context) => const PdfViewer(
-                                src: Syllabus15PdfPath.healthphysical,
+                                src: Syllabus15PdfPath.dcpLab,
                               ),
                             ),
                           );
@@ -169,7 +169,7 @@ class SemThree extends StatelessWidget {
                             context,
                             MaterialPageRoute(
                               builder: (context) => const PdfViewer(
-                                src: Syllabus15PdfPath.workshop,
+                                src: Syllabus15PdfPath.oopLab,
                               ),
                             ),
                           );
@@ -187,7 +187,7 @@ class SemThree extends StatelessWidget {
                             context,
                             MaterialPageRoute(
                               builder: (context) => const PdfViewer(
-                                src: Syllabus15PdfPath.cf,
+                                src: Syllabus15PdfPath.sqlLab,
                               ),
                             ),
                           );
@@ -196,24 +196,6 @@ class SemThree extends StatelessWidget {
                           size: size,
                           coursename: 'Database and SQL Lab',
                           coursecode: '3159',
-                        ),
-                      ),
-                      kHeight20,
-                      InkWell(
-                        onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => const PdfViewer(
-                                src: Syllabus15PdfPath.sciencelab,
-                              ),
-                            ),
-                          );
-                        },
-                        child: CustomSubButton(
-                          size: size,
-                          coursename: 'Mini Project',
-                          coursecode: '4009',
                         ),
                       ),
                     ],

@@ -14,13 +14,14 @@ class ScreenRev2015 extends StatelessWidget {
       child: SingleChildScrollView(
         child: Column(
           children: [
+            kHeight20,
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 InkWell(
                   child: Container(
                     width: size.width * 0.45,
-                    height: size.height * 0.19,
+                    height: size.height * 0.25,
                     decoration: BoxDecoration(
                         boxShadow: const [
                           BoxShadow(
@@ -36,8 +37,9 @@ class ScreenRev2015 extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: const [
                         Icon(
-                          Icons.tab,
+                          Icons.article,
                           color: ThemeColor.white,
+                          size: 30,
                         ),
                         Text(
                           'Syllabus',
@@ -63,7 +65,7 @@ class ScreenRev2015 extends StatelessWidget {
                 InkWell(
                   child: Container(
                     width: size.width * 0.45,
-                    height: size.height * 0.19,
+                    height: size.height * 0.25,
                     decoration: BoxDecoration(
                         boxShadow: const [
                           BoxShadow(
@@ -79,8 +81,9 @@ class ScreenRev2015 extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: const [
                         Icon(
-                          Icons.book,
+                          Icons.auto_stories_outlined,
                           color: ThemeColor.white,
+                          size: 30,
                         ),
                         Text(
                           'Notes',
@@ -103,7 +106,7 @@ class ScreenRev2015 extends StatelessWidget {
                 InkWell(
                   child: Container(
                     width: size.width * 0.45,
-                    height: size.height * 0.19,
+                    height: size.height * 0.25,
                     decoration: BoxDecoration(
                         boxShadow: const [
                           BoxShadow(
@@ -119,8 +122,9 @@ class ScreenRev2015 extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: const [
                         Icon(
-                          Icons.question_mark,
+                          Icons.quiz,
                           color: ThemeColor.white,
+                          size: 30,
                         ),
                         Text(
                           'Question Paper',
@@ -137,7 +141,7 @@ class ScreenRev2015 extends StatelessWidget {
                 InkWell(
                   child: Container(
                     width: size.width * 0.45,
-                    height: size.height * 0.19,
+                    height: size.height * 0.25,
                     decoration: BoxDecoration(
                         boxShadow: const [
                           BoxShadow(
@@ -153,8 +157,9 @@ class ScreenRev2015 extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: const [
                         Icon(
-                          Icons.library_books_sharp,
+                          Icons.menu_book_rounded,
                           color: ThemeColor.white,
+                          size: 30,
                         ),
                         Text(
                           'Lab Manual',

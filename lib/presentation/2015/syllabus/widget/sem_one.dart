@@ -5,8 +5,8 @@ import 'package:che/presentation/widgets/pdf_viewer.dart';
 import 'package:che/presentation/widgets/custom_sub_button.dart';
 import 'package:flutter/material.dart';
 
-class SemOne extends StatelessWidget {
-  const SemOne({
+class SemOneSyllabs extends StatelessWidget {
+  const SemOneSyllabs({
     super.key,
     required this.text,
   });
