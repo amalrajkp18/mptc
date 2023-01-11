@@ -34,6 +34,8 @@ class ScreenHome extends StatelessWidget {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
+                      //TODO: This inkwell is for Authentication service (optional auth on click)
+                      // Auth users will be having upload option
                       InkWell(
                         child: Container(
                           decoration: BoxDecoration(
