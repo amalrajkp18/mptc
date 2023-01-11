@@ -35,7 +35,7 @@ class ScreenAbout extends StatelessWidget {
                 child: Column(
                   children: [
                     const CircleAvatar(
-                      radius: 60,
+                      radius: 70,
                       backgroundColor: Colors.transparent,
                       child: ClipOval(
                         child: Image(

@@ -1,16 +1,10 @@
 import 'package:che/core/const.dart';
 import 'package:che/core/theme_color.dart';
-import 'package:che/presentation/2015/syllabus/widget/sem_five.dart';
-import 'package:che/presentation/2015/syllabus/widget/sem_four.dart';
-import 'package:che/presentation/2015/syllabus/widget/sem_one.dart';
-import 'package:che/presentation/2015/syllabus/widget/sem_six.dart';
-import 'package:che/presentation/2015/syllabus/widget/sem_three.dart';
-import 'package:che/presentation/2015/syllabus/widget/sem_two.dart';
 import 'package:che/presentation/widgets/custom_sem_button.dart';
 import 'package:flutter/material.dart';
 
-class ScreenSyllabus extends StatelessWidget {
-  const ScreenSyllabus({
+class ScreenLabManualRev15 extends StatelessWidget {
+  const ScreenLabManualRev15({
     super.key,
     required this.text,
   });
@@ -57,13 +51,13 @@ class ScreenSyllabus extends StatelessWidget {
                 size: size,
                 text: 'Semester I',
                 onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) =>
-                          const SemOneSyllabs(text: 'Semester I'),
-                    ),
-                  );
+                  // Navigator.push(
+                  //   context,
+                  //   MaterialPageRoute(
+                  //     builder: (context) =>
+                  //         const SemOneSyllabusRev15(text: 'Semester I'),
+                  //   ),
+                  // );
                 },
               ),
               kHeight20,
@@ -71,13 +65,13 @@ class ScreenSyllabus extends StatelessWidget {
                 size: size,
                 text: 'Semester II',
                 onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) =>
-                          const SemTwoSyllabs(text: 'Semester II'),
-                    ),
-                  );
+                  // Navigator.push(
+                  //   context,
+                  //   MaterialPageRoute(
+                  //     builder: (context) =>
+                  //         const SemTwoSyllabusRev15(text: 'Semester II'),
+                  //   ),
+                  // );
                 },
               ),
               kHeight20,
@@ -85,13 +79,13 @@ class ScreenSyllabus extends StatelessWidget {
                 size: size,
                 text: 'Semester III',
                 onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) =>
-                          const SemThreeSyllabs(text: 'Semester III'),
-                    ),
-                  );
+                  // Navigator.push(
+                  //   context,
+                  //   MaterialPageRoute(
+                  //     builder: (context) =>
+                  //         const SemThreeSyllabusRev15(text: 'Semester III'),
+                  //   ),
+                  // );
                 },
               ),
               kHeight20,
@@ -99,13 +93,13 @@ class ScreenSyllabus extends StatelessWidget {
                 size: size,
                 text: 'Semester IV',
                 onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) =>
-                          const SemFourSyllabs(text: 'Semester IV'),
-                    ),
-                  );
+                  // Navigator.push(
+                  //   context,
+                  //   MaterialPageRoute(
+                  //     builder: (context) =>
+                  //         const SemFourSyllabusRev15(text: 'Semester IV'),
+                  //   ),
+                  // );
                 },
               ),
               kHeight20,
@@ -113,13 +107,13 @@ class ScreenSyllabus extends StatelessWidget {
                 size: size,
                 text: 'Semester V',
                 onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) =>
-                          const SemFiveSyllabs(text: 'Semester V'),
-                    ),
-                  );
+                  // Navigator.push(
+                  //   context,
+                  //   MaterialPageRoute(
+                  //     builder: (context) =>
+                  //         const SemFiveSyllabusRev15(text: 'Semester V'),
+                  //   ),
+                  // );
                 },
               ),
               kHeight20,
@@ -127,13 +121,13 @@ class ScreenSyllabus extends StatelessWidget {
                 size: size,
                 text: 'Semester VI',
                 onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) =>
-                          const SemSixSyllabs(text: 'Semester VI'),
-                    ),
-                  );
+                  // Navigator.push(
+                  //   context,
+                  //   MaterialPageRoute(
+                  //     builder: (context) =>
+                  //         const SemSixSyllabusRev15(text: 'Semester VI'),
+                  //   ),
+                  // );
                 },
               ),
             ],

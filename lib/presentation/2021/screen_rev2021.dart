@@ -1,5 +1,6 @@
 import 'package:che/core/const.dart';
 import 'package:che/core/theme_color.dart';
+import 'package:che/presentation/2021/syllabus/screen_syllabus_rev21.dart';
 import 'package:flutter/material.dart';
 
 class ScreenRev2021 extends StatelessWidget {
@@ -51,10 +52,13 @@ class ScreenRev2021 extends StatelessWidget {
                     ),
                   ),
                   onTap: () {
-                    // Navigator.push(
-                    //     context,
-                    //     MaterialPageRoute(
-                    //         builder: (context) => )));
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) =>
+                            const ScreenSyllabusRev21(text: 'Syllabus'),
+                      ),
+                    );
                   },
                 ),
                 InkWell(

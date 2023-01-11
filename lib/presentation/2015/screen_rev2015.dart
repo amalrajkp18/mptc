@@ -1,6 +1,7 @@
 import 'package:che/core/const.dart';
 import 'package:che/core/theme_color.dart';
-import 'package:che/presentation/2015/syllabus/screen_syllabus.dart';
+import 'package:che/presentation/2015/lab_manual.dart/screen_lab_manual_rev15.dart';
+import 'package:che/presentation/2015/syllabus/screen_syllabus_rev15.dart';
 import 'package:flutter/material.dart';
 
 class ScreenRev2015 extends StatelessWidget {
@@ -55,7 +56,7 @@ class ScreenRev2015 extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const ScreenSyllabus(
+                        builder: (context) => const ScreenSyllabusRev15(
                           text: 'Syllabus',
                         ),
                       ),
@@ -171,7 +172,15 @@ class ScreenRev2015 extends StatelessWidget {
                       ],
                     ),
                   ),
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) =>
+                            const ScreenLabManualRev15(text: 'Lab Manual'),
+                      ),
+                    );
+                  },
                 ),
               ],
             ),
