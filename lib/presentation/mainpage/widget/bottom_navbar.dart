@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 import '../../../core/theme_color.dart';
@@ -25,15 +24,23 @@ class BottomNavBar extends StatelessWidget {
           selectedIconTheme: const IconThemeData(color: ThemeColor.primary),
           unselectedItemColor: Colors.grey,
           unselectedIconTheme: const IconThemeData(color: ThemeColor.grey),
-          selectedFontSize: 12,
-          unselectedFontSize: 10,
+          showUnselectedLabels: false,
+          showSelectedLabels: false,
+          // selectedFontSize: 12,
+          // unselectedFontSize: 10,
           items: const [
             BottomNavigationBarItem(
-              icon: Icon(Icons.home),
+              icon: Icon(
+                Icons.home,
+                size: 30,
+              ),
               label: 'Home',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.perm_device_info),
+              icon: Icon(
+                Icons.info,
+                size: 30,
+              ),
               label: 'About',
             ),
           ],

@@ -24,16 +24,29 @@ class ScreenHome extends StatelessWidget {
                 child: Padding(
                   padding: const EdgeInsets.all(20.0),
                   child: Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: const [
-                      Text(
-                        'Nerve',
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      const Text(
+                        "Nerve",
                         style: TextStyle(
                           color: ThemeColor.black,
-                          fontSize: 30,
+                          fontSize: 26,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
+                      InkWell(
+                        child: Container(
+                          decoration: BoxDecoration(
+                              color: ThemeColor.lightGrey,
+                              borderRadius: BorderRadius.circular(12)),
+                          padding: const EdgeInsets.all(12),
+                          child: const Icon(
+                            Icons.account_circle,
+                            color: Colors.white,
+                          ),
+                        ),
+                        onTap: () {},
+                      )
                     ],
                   ),
                 ),

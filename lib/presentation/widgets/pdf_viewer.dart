@@ -20,7 +20,7 @@ class PdfViewer extends StatelessWidget {
                 fit: BoxFit.cover,
               ),
               const Text(
-                'Sorry! No Pdf found :(',
+                'Sorry! No PDF found :(',
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 20,
@@ -36,6 +36,33 @@ class PdfViewer extends StatelessWidget {
     }
     return Scaffold(
         backgroundColor: ThemeColor.white,
+        appBar: AppBar(
+            centerTitle: true,
+            backgroundColor: ThemeColor.primary,
+            // actions: <Widget>[
+            //   InkWell(
+            //     child: Container(
+            //       decoration: BoxDecoration(
+            //           color: ThemeColor.primary,
+            //           borderRadius: BorderRadius.circular(12)),
+            //       padding: const EdgeInsets.all(15),
+            //       child: const Icon(
+            //         Icons.arrow_back,
+            //         color: Colors.white,
+            //       ),
+            //     ),
+            //     onTap: () {
+            //       Navigator.pop(context);
+            //     },
+            //   )
+            // ],
+            title: const Text(
+              "PDF Viewer",
+              style: TextStyle(
+                fontSize: 20,
+                color: ThemeColor.white,
+              ),
+            )),
         body: SafeArea(
           child: SfPdfViewer.network(
             src,
