@@ -1,6 +1,7 @@
-import 'package:che/core/theme_color.dart';
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
+
+import '../../core/theme_color.dart';
 
 class PdfViewer extends StatelessWidget {
   const PdfViewer({super.key, required this.src});

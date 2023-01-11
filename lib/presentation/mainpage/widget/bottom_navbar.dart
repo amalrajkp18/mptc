@@ -1,5 +1,7 @@
-import 'package:che/core/theme_color.dart';
+
 import 'package:flutter/material.dart';
+
+import '../../../core/theme_color.dart';
 
 ValueNotifier<int> indexChangeNotifier = ValueNotifier(0);
 
