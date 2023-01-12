@@ -38,6 +38,13 @@ class BottomNavBar extends StatelessWidget {
             ),
             BottomNavigationBarItem(
               icon: Icon(
+                Icons.drive_folder_upload_outlined,
+                size: 30,
+              ),
+              label: 'About',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(
                 Icons.info,
                 size: 30,
               ),

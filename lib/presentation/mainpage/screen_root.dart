@@ -1,8 +1,8 @@
-
 import 'package:flutter/material.dart';
 
 import '../about/screen_about.dart';
 import '../home/screen_home.dart';
+import '../upload/screen_upload.dart';
 import 'widget/bottom_navbar.dart';
 
 class ScreenRoot extends StatelessWidget {
@@ -10,6 +10,7 @@ class ScreenRoot extends StatelessWidget {
 
   final _pages = [
     const ScreenHome(),
+    const ScreenUpload(),
     const ScreenAbout(),
   ];
 
