@@ -1,9 +1,10 @@
-import 'package:che/core/const.dart';
-import 'package:che/core/pdf/syllabus/syllabus15_pdf_path.dart';
-import 'package:che/core/theme_color.dart';
-import 'package:che/presentation/widgets/pdf_viewer.dart';
-import 'package:che/presentation/widgets/custom_sub_button.dart';
 import 'package:flutter/material.dart';
+
+import '../../../../../core/const.dart';
+import '../../../../../core/pdf/syllabus/syllabus15_pdf_path.dart';
+import '../../../../../core/theme_color.dart';
+import '../../../../widgets/custom_sub_button.dart';
+import '../../../../widgets/pdf_viewer.dart';
 
 class SemOneSyllabusRev15 extends StatelessWidget {
   const SemOneSyllabusRev15({
@@ -16,11 +17,11 @@ class SemOneSyllabusRev15 extends StatelessWidget {
     final size = MediaQuery.of(context).size;
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          children: [
-            Padding(
-              padding: const EdgeInsets.symmetric(vertical: 7, horizontal: 12),
-              child: Row(
+        child: Padding(
+          padding: const EdgeInsets.all(20.0),
+          child: Column(
+            children: [
+              Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
@@ -48,179 +49,178 @@ class SemOneSyllabusRev15 extends StatelessWidget {
                   )
                 ],
               ),
-            ),
-            kHeight25,
-            Expanded(
-              child: SingleChildScrollView(
-                padding: const EdgeInsets.symmetric(horizontal: 10),
-                child: Column(
-                  children: [
-                    InkWell(
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const PdfViewer(
-                              src: Syllabus15PdfPath.english1,
+              kHeight20,
+              Expanded(
+                child: SingleChildScrollView(
+                  child: Column(
+                    children: [
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const PdfViewer(
+                                src: Syllabus15PdfPath.english1,
+                              ),
                             ),
-                          ),
-                        );
-                      },
-                      child: CustomSubButton(
-                        size: size,
-                        coursename: 'English for Communication I',
-                        coursecode: '1001',
+                          );
+                        },
+                        child: CustomSubButton(
+                          size: size,
+                          coursename: 'English for Communication I',
+                          coursecode: '1001',
+                        ),
                       ),
-                    ),
-                    kHeight20,
-                    InkWell(
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const PdfViewer(
-                              src: Syllabus15PdfPath.maths1,
+                      kHeight,
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const PdfViewer(
+                                src: Syllabus15PdfPath.maths1,
+                              ),
                             ),
-                          ),
-                        );
-                      },
-                      child: CustomSubButton(
-                        size: size,
-                        coursename: 'Engineering Mathematics I',
-                        coursecode: '1002',
+                          );
+                        },
+                        child: CustomSubButton(
+                          size: size,
+                          coursename: 'Engineering Mathematics I',
+                          coursecode: '1002',
+                        ),
                       ),
-                    ),
-                    kHeight20,
-                    InkWell(
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const PdfViewer(
-                              src: Syllabus15PdfPath.physics1,
+                      kHeight,
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const PdfViewer(
+                                src: Syllabus15PdfPath.physics1,
+                              ),
                             ),
-                          ),
-                        );
-                      },
-                      child: CustomSubButton(
-                        size: size,
-                        coursename: 'Engineering Physics I',
-                        coursecode: '1003',
+                          );
+                        },
+                        child: CustomSubButton(
+                          size: size,
+                          coursename: 'Engineering Physics I',
+                          coursecode: '1003',
+                        ),
                       ),
-                    ),
-                    kHeight20,
-                    InkWell(
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const PdfViewer(
-                              src: Syllabus15PdfPath.chemistry1,
+                      kHeight,
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const PdfViewer(
+                                src: Syllabus15PdfPath.chemistry1,
+                              ),
                             ),
-                          ),
-                        );
-                      },
-                      child: CustomSubButton(
-                        size: size,
-                        coursename: 'Engineering Chemistry I',
-                        coursecode: '1004',
+                          );
+                        },
+                        child: CustomSubButton(
+                          size: size,
+                          coursename: 'Engineering Chemistry I',
+                          coursecode: '1004',
+                        ),
                       ),
-                    ),
-                    kHeight20,
-                    InkWell(
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const PdfViewer(
-                              src: Syllabus15PdfPath.graphics,
+                      kHeight,
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const PdfViewer(
+                                src: Syllabus15PdfPath.graphics,
+                              ),
                             ),
-                          ),
-                        );
-                      },
-                      child: CustomSubButton(
-                        size: size,
-                        coursename: 'Engineering Graphics',
-                        coursecode: '2005',
+                          );
+                        },
+                        child: CustomSubButton(
+                          size: size,
+                          coursename: 'Engineering Graphics',
+                          coursecode: '2005',
+                        ),
                       ),
-                    ),
-                    kHeight20,
-                    InkWell(
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const PdfViewer(
-                              src: Syllabus15PdfPath.healthphysical,
+                      kHeight,
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const PdfViewer(
+                                src: Syllabus15PdfPath.healthphysical,
+                              ),
                             ),
-                          ),
-                        );
-                      },
-                      child: CustomSubButton(
-                        size: size,
-                        coursename: 'Health & Physical Education',
-                        coursecode: '1009',
+                          );
+                        },
+                        child: CustomSubButton(
+                          size: size,
+                          coursename: 'Health & Physical Education',
+                          coursecode: '1009',
+                        ),
                       ),
-                    ),
-                    kHeight20,
-                    InkWell(
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const PdfViewer(
-                              src: Syllabus15PdfPath.workshop,
+                      kHeight,
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const PdfViewer(
+                                src: Syllabus15PdfPath.workshop,
+                              ),
                             ),
-                          ),
-                        );
-                      },
-                      child: CustomSubButton(
-                        size: size,
-                        coursename: 'Workshop Practice',
-                        coursecode: '2008',
+                          );
+                        },
+                        child: CustomSubButton(
+                          size: size,
+                          coursename: 'Workshop Practice',
+                          coursecode: '2008',
+                        ),
                       ),
-                    ),
-                    kHeight20,
-                    InkWell(
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const PdfViewer(
-                              src: Syllabus15PdfPath.cf,
+                      kHeight,
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const PdfViewer(
+                                src: Syllabus15PdfPath.cf,
+                              ),
                             ),
-                          ),
-                        );
-                      },
-                      child: CustomSubButton(
-                        size: size,
-                        coursename: 'Computing Fundamentals',
-                        coursecode: '1008',
+                          );
+                        },
+                        child: CustomSubButton(
+                          size: size,
+                          coursename: 'Computing Fundamentals',
+                          coursecode: '1008',
+                        ),
                       ),
-                    ),
-                    kHeight20,
-                    InkWell(
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const PdfViewer(
-                              src: Syllabus15PdfPath.sciencelab,
+                      kHeight,
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const PdfViewer(
+                                src: Syllabus15PdfPath.sciencelab,
+                              ),
                             ),
-                          ),
-                        );
-                      },
-                      child: CustomSubButton(
-                        size: size,
-                        coursename: 'Engineering Science Lab I',
-                        coursecode: '2007',
+                          );
+                        },
+                        child: CustomSubButton(
+                          size: size,
+                          coursename: 'Engineering Science Lab I',
+                          coursecode: '2007',
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

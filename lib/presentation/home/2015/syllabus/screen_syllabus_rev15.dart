@@ -1,13 +1,13 @@
-import 'package:che/core/const.dart';
-import 'package:che/core/theme_color.dart';
-import 'package:che/presentation/home/2015/syllabus/widget/sem_five_rev15.dart';
-import 'package:che/presentation/home/2015/syllabus/widget/sem_four_rev15.dart';
-import 'package:che/presentation/home/2015/syllabus/widget/sem_one_rev15.dart';
-import 'package:che/presentation/home/2015/syllabus/widget/sem_six_rev15.dart';
-import 'package:che/presentation/home/2015/syllabus/widget/sem_three_rev15.dart';
-import 'package:che/presentation/home/2015/syllabus/widget/sem_two_rev15.dart';
-import 'package:che/presentation/widgets/custom_sem_button.dart';
 import 'package:flutter/material.dart';
+import '../../../../core/const.dart';
+import '../../../../core/theme_color.dart';
+import '../../../widgets/custom_sem_button.dart';
+import 'widget/sem_five_rev15.dart';
+import 'widget/sem_four_rev15.dart';
+import 'widget/sem_one_rev15.dart';
+import 'widget/sem_six_rev15.dart';
+import 'widget/sem_three_rev15.dart';
+import 'widget/sem_two_rev15.dart';
 
 class ScreenSyllabusRev15 extends StatelessWidget {
   const ScreenSyllabusRev15({
@@ -21,7 +21,7 @@ class ScreenSyllabusRev15 extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.all(10.0),
+          padding: const EdgeInsets.all(20.0),
           child: Column(
             children: [
               Row(
@@ -52,7 +52,7 @@ class ScreenSyllabusRev15 extends StatelessWidget {
                   )
                 ],
               ),
-              kHeight50,
+              kHeight20,
               CustomSemButton(
                 size: size,
                 text: 'Semester I',
@@ -66,7 +66,7 @@ class ScreenSyllabusRev15 extends StatelessWidget {
                   );
                 },
               ),
-              kHeight20,
+              kHeight,
               CustomSemButton(
                 size: size,
                 text: 'Semester II',
@@ -80,7 +80,7 @@ class ScreenSyllabusRev15 extends StatelessWidget {
                   );
                 },
               ),
-              kHeight20,
+              kHeight,
               CustomSemButton(
                 size: size,
                 text: 'Semester III',
@@ -94,7 +94,7 @@ class ScreenSyllabusRev15 extends StatelessWidget {
                   );
                 },
               ),
-              kHeight20,
+              kHeight,
               CustomSemButton(
                 size: size,
                 text: 'Semester IV',
@@ -108,7 +108,7 @@ class ScreenSyllabusRev15 extends StatelessWidget {
                   );
                 },
               ),
-              kHeight20,
+              kHeight,
               CustomSemButton(
                 size: size,
                 text: 'Semester V',
@@ -122,7 +122,7 @@ class ScreenSyllabusRev15 extends StatelessWidget {
                   );
                 },
               ),
-              kHeight20,
+              kHeight,
               CustomSemButton(
                 size: size,
                 text: 'Semester VI',

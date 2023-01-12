@@ -1,9 +1,10 @@
-import 'package:che/core/const.dart';
-import 'package:che/core/theme_color.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
+
+import '../../core/const.dart';
+import '../../core/theme_color.dart';
 
 class ScreenAbout extends StatelessWidget {
   const ScreenAbout({super.key});
@@ -20,7 +21,7 @@ class ScreenAbout extends StatelessWidget {
             children: [
               Container(
                 width: size.width * 0.8,
-                height: size.height * 0.45,
+                // height: size.height * 0.55,
                 decoration: BoxDecoration(
                     boxShadow: const [
                       BoxShadow(

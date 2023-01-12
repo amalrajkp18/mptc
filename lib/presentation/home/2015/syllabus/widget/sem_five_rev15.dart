@@ -1,9 +1,10 @@
-import 'package:che/core/const.dart';
-import 'package:che/core/pdf/syllabus/syllabus15_pdf_path.dart';
-import 'package:che/core/theme_color.dart';
-import 'package:che/presentation/widgets/pdf_viewer.dart';
-import 'package:che/presentation/widgets/custom_sub_button.dart';
 import 'package:flutter/material.dart';
+
+import '../../../../../core/const.dart';
+import '../../../../../core/pdf/syllabus/syllabus15_pdf_path.dart';
+import '../../../../../core/theme_color.dart';
+import '../../../../widgets/custom_sub_button.dart';
+import '../../../../widgets/pdf_viewer.dart';
 
 class SemFiveSyllabusRev15 extends StatelessWidget {
   const SemFiveSyllabusRev15({
@@ -16,11 +17,11 @@ class SemFiveSyllabusRev15 extends StatelessWidget {
     final size = MediaQuery.of(context).size;
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          children: [
-            Padding(
-              padding: const EdgeInsets.symmetric(vertical: 7, horizontal: 12),
-              child: Row(
+        child: Padding(
+          padding: const EdgeInsets.all(20.0),
+          child: Column(
+            children: [
+              Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
@@ -48,180 +49,180 @@ class SemFiveSyllabusRev15 extends StatelessWidget {
                   )
                 ],
               ),
-            ),
-            kHeight25,
-            Expanded(
-              child: SingleChildScrollView(
-                padding: const EdgeInsets.symmetric(horizontal: 10),
-                child: Column(
-                  children: [
-                    InkWell(
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const PdfViewer(
-                              src: Syllabus15PdfPath.pmse,
+              kHeight20,
+              Expanded(
+                child: SingleChildScrollView(
+                  child: Column(
+                    children: [
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const PdfViewer(
+                                src: Syllabus15PdfPath.pmse,
+                              ),
                             ),
-                          ),
-                        );
-                      },
-                      child: CustomSubButton(
-                        size: size,
-                        coursename: 'Project Management & Software Engineering',
-                        coursecode: '5132',
+                          );
+                        },
+                        child: CustomSubButton(
+                          size: size,
+                          coursename:
+                              'Project Management & Software Engineering',
+                          coursecode: '5132',
+                        ),
                       ),
-                    ),
-                    kHeight20,
-                    InkWell(
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const PdfViewer(
-                              src: Syllabus15PdfPath.cn,
+                      kHeight,
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const PdfViewer(
+                                src: Syllabus15PdfPath.cn,
+                              ),
                             ),
-                          ),
-                        );
-                      },
-                      child: CustomSubButton(
-                        size: size,
-                        coursename: 'Computer Networks',
-                        coursecode: '5151',
+                          );
+                        },
+                        child: CustomSubButton(
+                          size: size,
+                          coursename: 'Computer Networks',
+                          coursecode: '5151',
+                        ),
                       ),
-                    ),
-                    kHeight20,
-                    InkWell(
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const PdfViewer(
-                              src: Syllabus15PdfPath.np,
+                      kHeight,
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const PdfViewer(
+                                src: Syllabus15PdfPath.np,
+                              ),
                             ),
-                          ),
-                        );
-                      },
-                      child: CustomSubButton(
-                        size: size,
-                        coursename: 'Network Programming',
-                        coursecode: '5152',
+                          );
+                        },
+                        child: CustomSubButton(
+                          size: size,
+                          coursename: 'Network Programming',
+                          coursecode: '5152',
+                        ),
                       ),
-                    ),
-                    kHeight20,
-                    InkWell(
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const PdfViewer(
-                              src: Syllabus15PdfPath.iS,
+                      kHeight,
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const PdfViewer(
+                                src: Syllabus15PdfPath.iS,
+                              ),
                             ),
-                          ),
-                        );
-                      },
-                      child: CustomSubButton(
-                        size: size,
-                        coursename: 'Information Security',
-                        coursecode: '5136',
+                          );
+                        },
+                        child: CustomSubButton(
+                          size: size,
+                          coursename: 'Information Security',
+                          coursecode: '5136',
+                        ),
                       ),
-                    ),
-                    kHeight20,
-                    InkWell(
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const PdfViewer(
-                              src: Syllabus15PdfPath.npLab,
+                      kHeight,
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const PdfViewer(
+                                src: Syllabus15PdfPath.npLab,
+                              ),
                             ),
-                          ),
-                        );
-                      },
-                      child: CustomSubButton(
-                        size: size,
-                        coursename: 'Network Programming Lab',
-                        coursecode: '5159',
+                          );
+                        },
+                        child: CustomSubButton(
+                          size: size,
+                          coursename: 'Network Programming Lab',
+                          coursecode: '5159',
+                        ),
                       ),
-                    ),
-                    kHeight20,
-                    InkWell(
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const PdfViewer(
-                              src: Syllabus15PdfPath.mpAndILAb,
+                      kHeight,
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const PdfViewer(
+                                src: Syllabus15PdfPath.mpAndILAb,
+                              ),
                             ),
-                          ),
-                        );
-                      },
-                      child: CustomSubButton(
-                        size: size,
-                        coursename: 'Microprocessor Lab',
-                        coursecode: '5138',
+                          );
+                        },
+                        child: CustomSubButton(
+                          size: size,
+                          coursename: 'Microprocessor Lab',
+                          coursecode: '5138',
+                        ),
                       ),
-                    ),
-                    kHeight20,
-                    InkWell(
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const PdfViewer(
-                              src: Syllabus15PdfPath.cnLab,
+                      kHeight,
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const PdfViewer(
+                                src: Syllabus15PdfPath.cnLab,
+                              ),
                             ),
-                          ),
-                        );
-                      },
-                      child: CustomSubButton(
-                        size: size,
-                        coursename: 'Computer Network Engineering Lab',
-                        coursecode: '5137',
+                          );
+                        },
+                        child: CustomSubButton(
+                          size: size,
+                          coursename: 'Computer Network Engineering Lab',
+                          coursecode: '5137',
+                        ),
                       ),
-                    ),
-                    kHeight20,
-                    InkWell(
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const PdfViewer(
-                              src: Syllabus15PdfPath.industrialTraining,
+                      kHeight,
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const PdfViewer(
+                                src: Syllabus15PdfPath.industrialTraining,
+                              ),
                             ),
-                          ),
-                        );
-                      },
-                      child: CustomSubButton(
-                        size: size,
-                        coursename:
-                            'Industrial Training/Industrial Visit/Collaborative work',
-                        coursecode: '5009',
+                          );
+                        },
+                        child: CustomSubButton(
+                          size: size,
+                          coursename:
+                              'Industrial Training/Industrial Visit/Collaborative work',
+                          coursecode: '5009',
+                        ),
                       ),
-                    ),
-                    kHeight20,
-                    InkWell(
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const PdfViewer(
-                              src: Syllabus15PdfPath.seminar,
+                      kHeight,
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const PdfViewer(
+                                src: Syllabus15PdfPath.seminar,
+                              ),
                             ),
-                          ),
-                        );
-                      },
-                      child: CustomSubButton(
-                        size: size,
-                        coursename: 'Project & Seminar',
-                        coursecode: '6009',
+                          );
+                        },
+                        child: CustomSubButton(
+                          size: size,
+                          coursename: 'Project & Seminar',
+                          coursecode: '6009',
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
