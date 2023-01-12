@@ -1,6 +1,6 @@
 import 'package:che/core/const.dart';
 import 'package:che/core/theme_color.dart';
-import 'package:che/presentation/2021/syllabus/screen_syllabus_rev21.dart';
+import 'package:che/presentation/home/2021/syllabus/screen_syllabus_rev21.dart';
 import 'package:flutter/material.dart';
 
 class ScreenRev2021 extends StatelessWidget {

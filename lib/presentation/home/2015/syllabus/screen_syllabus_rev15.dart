@@ -1,11 +1,11 @@
 import 'package:che/core/const.dart';
 import 'package:che/core/theme_color.dart';
-import 'package:che/presentation/2015/syllabus/widget/sem_five_rev15.dart';
-import 'package:che/presentation/2015/syllabus/widget/sem_four_rev15.dart';
-import 'package:che/presentation/2015/syllabus/widget/sem_one_rev15.dart';
-import 'package:che/presentation/2015/syllabus/widget/sem_six_rev15.dart';
-import 'package:che/presentation/2015/syllabus/widget/sem_three_rev15.dart';
-import 'package:che/presentation/2015/syllabus/widget/sem_two_rev15.dart';
+import 'package:che/presentation/home/2015/syllabus/widget/sem_five_rev15.dart';
+import 'package:che/presentation/home/2015/syllabus/widget/sem_four_rev15.dart';
+import 'package:che/presentation/home/2015/syllabus/widget/sem_one_rev15.dart';
+import 'package:che/presentation/home/2015/syllabus/widget/sem_six_rev15.dart';
+import 'package:che/presentation/home/2015/syllabus/widget/sem_three_rev15.dart';
+import 'package:che/presentation/home/2015/syllabus/widget/sem_two_rev15.dart';
 import 'package:che/presentation/widgets/custom_sem_button.dart';
 import 'package:flutter/material.dart';
 

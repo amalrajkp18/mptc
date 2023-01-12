@@ -14,8 +14,8 @@ class PdfViewer extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.network(
-                'https://i.pinimg.com/originals/5d/35/e3/5d35e39988e3a183bdc3a9d2570d20a9.gif',
+              Image.asset(
+                'images/notfound.gif',
                 fit: BoxFit.cover,
               ),
               const Text(
@@ -34,11 +34,12 @@ class PdfViewer extends StatelessWidget {
       );
     }
     return Scaffold(
-        backgroundColor: ThemeColor.white,
-        body: SafeArea(
-          child: SfPdfViewer.network(
-            src,
-          ),
-        ));
+      backgroundColor: ThemeColor.white,
+      body: SafeArea(
+        child: SfPdfViewer.network(
+          src,
+        ),
+      ),
+    );
   }
 }

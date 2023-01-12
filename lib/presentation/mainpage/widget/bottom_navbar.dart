@@ -31,6 +31,10 @@ class BottomNavBar extends StatelessWidget {
               label: 'Home',
             ),
             BottomNavigationBarItem(
+              icon: Icon(Icons.add_box_outlined),
+              label: 'Upload',
+            ),
+            BottomNavigationBarItem(
               icon: Icon(Icons.perm_device_info),
               label: 'About',
             ),

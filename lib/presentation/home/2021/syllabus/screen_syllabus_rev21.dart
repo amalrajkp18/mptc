@@ -1,9 +1,9 @@
 import 'package:che/core/const.dart';
 import 'package:che/core/theme_color.dart';
-import 'package:che/presentation/2021/syllabus/widgets/sem_four_rev21.dart';
-import 'package:che/presentation/2021/syllabus/widgets/sem_one_rev21.dart';
-import 'package:che/presentation/2021/syllabus/widgets/sem_three_rev21.dart';
-import 'package:che/presentation/2021/syllabus/widgets/sem_two_rev21.dart';
+import 'package:che/presentation/home/2021/syllabus/widgets/sem_four_rev21.dart';
+import 'package:che/presentation/home/2021/syllabus/widgets/sem_one_rev21.dart';
+import 'package:che/presentation/home/2021/syllabus/widgets/sem_three_rev21.dart';
+import 'package:che/presentation/home/2021/syllabus/widgets/sem_two_rev21.dart';
 import 'package:che/presentation/widgets/custom_sem_button.dart';
 import 'package:flutter/material.dart';
 

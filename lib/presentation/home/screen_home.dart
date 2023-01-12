@@ -1,8 +1,8 @@
 import 'package:animated_segmented_tab_control/animated_segmented_tab_control.dart';
 import 'package:che/core/const.dart';
 import 'package:che/core/theme_color.dart';
-import 'package:che/presentation/2015/screen_rev2015.dart';
-import 'package:che/presentation/2021/screen_rev2021.dart';
+import 'package:che/presentation/home/2015/screen_rev2015.dart';
+import 'package:che/presentation/home/2021/screen_rev2021.dart';
 import 'package:flutter/material.dart';
 
 class ScreenHome extends StatelessWidget {
