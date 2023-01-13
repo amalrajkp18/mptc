@@ -26,33 +26,21 @@ class ScreenUpload extends StatelessWidget {
         children: [
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 7, horizontal: 12),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                const Text(
-                  'Upload',
-                  style: TextStyle(
-                    color: ThemeColor.black,
-                    fontSize: 26,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                InkWell(
-                  child: Container(
-                    decoration: BoxDecoration(
-                        color: ThemeColor.lightGrey,
-                        borderRadius: BorderRadius.circular(12)),
-                    padding: const EdgeInsets.all(12),
-                    child: const Icon(
-                      Icons.arrow_back,
-                      color: Colors.white,
+            child: Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: const [
+                  Text(
+                    'Upload',
+                    style: TextStyle(
+                      color: ThemeColor.black,
+                      fontSize: 26,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
-                  onTap: () {
-                    Navigator.pop(context);
-                  },
-                )
-              ],
+                ],
+              ),
             ),
           ),
         ],
