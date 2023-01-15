@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../core/const.dart';
 import '../../../core/theme_color.dart';
 import 'lab_manual.dart/screen_lab_manual_rev15.dart';
+import 'notes/screennotes.dart';
 import 'syllabus/screen_syllabus_rev15.dart';
 
 class ScreenRev2015 extends StatelessWidget {
@@ -96,7 +97,14 @@ class ScreenRev2015 extends StatelessWidget {
                       ],
                     ),
                   ),
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const ScreenNotes(),
+                      ),
+                    );
+                  },
                 ),
               ],
             ),

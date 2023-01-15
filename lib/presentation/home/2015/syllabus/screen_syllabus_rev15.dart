@@ -1,4 +1,4 @@
-import 'package:che/presentation/widgets/screen_sems_list.dart';
+import 'package:nerve/presentation/widgets/screen_sems_list.dart';
 import 'package:flutter/material.dart';
 import 'widgets/sem_five_rev15.dart';
 import 'widgets/sem_four_rev15.dart';

@@ -7,9 +7,14 @@ import '../../core/theme_color.dart';
 import '2015/screen_rev2015.dart';
 import '2021/screen_rev2021.dart';
 
-class ScreenHome extends StatelessWidget {
+class ScreenHome extends StatefulWidget {
   const ScreenHome({super.key});
 
+  @override
+  State<ScreenHome> createState() => _ScreenHomeState();
+}
+
+class _ScreenHomeState extends State<ScreenHome> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -20,37 +25,37 @@ class ScreenHome extends StatelessWidget {
             children: [
               kHeight,
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 10),
-                child: Padding(
-                  padding: const EdgeInsets.all(20.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      const Text(
-                        "Nerve",
-                        style: TextStyle(
-                          color: ThemeColor.black,
-                          fontSize: 26,
-                          fontWeight: FontWeight.bold,
+                padding: const EdgeInsets.all(20.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    const Text(
+                      "Nerve",
+                      style: TextStyle(
+                        color: ThemeColor.black,
+                        fontSize: 26,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    //TODO: This inkwell is for Authentication service (optional auth on click)
+                    // Auth users will be having upload option
+                    InkWell(
+                      child: Container(
+                        decoration: BoxDecoration(
+                            color: ThemeColor.lightGrey,
+                            borderRadius: BorderRadius.circular(12)),
+                        padding: const EdgeInsets.all(12),
+                        child: const Icon(
+                          Icons.account_circle,
+                          color: Colors.white,
                         ),
                       ),
-                      //TODO: This inkwell is for Authentication service (optional auth on click)
-                      // Auth users will be having upload option
-                      InkWell(
-                        child: Container(
-                          decoration: BoxDecoration(
-                              color: ThemeColor.lightGrey,
-                              borderRadius: BorderRadius.circular(12)),
-                          padding: const EdgeInsets.all(12),
-                          child: const Icon(
-                            Icons.account_circle,
-                            color: Colors.white,
-                          ),
-                        ),
-                        onTap: () {},
-                      )
-                    ],
-                  ),
+                      onTap: () async {
+                        // UserCredential userCredential =
+                        //     await FirebaseAuth.instance.signInAnonymously();
+                      },
+                    )
+                  ],
                 ),
               ),
               const Padding(
