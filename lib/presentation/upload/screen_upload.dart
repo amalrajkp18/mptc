@@ -1,3 +1,4 @@
+import 'package:che/core/const.dart';
 import 'package:che/core/theme_color.dart';
 import 'package:che/presentation/upload/storage_service.dart';
 import 'package:file_picker/file_picker.dart';
@@ -22,71 +23,47 @@ class ScreenUpload extends StatefulWidget {
   State<ScreenUpload> createState() => _ScreenUploadState();
 }
 
-class _ScreenUploadState extends State<ScreenUpload> {
   @override
   Widget build(BuildContext context) {
     final Storage storage = Storage();
     return Scaffold(
       backgroundColor: ThemeColor.scaffoldBgColor,
       body: SafeArea(
-        child: Column(
-          children: [
-            Padding(
-              padding: const EdgeInsets.all(20.0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  const Text(
-                    'Upload',
-                    style: TextStyle(
-                      color: ThemeColor.black,
-                      fontSize: 26,
-                      fontWeight: FontWeight.bold,
+          child: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 7, horizontal: 12),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                const Text(
+                  'Upload',
+                  style: TextStyle(
+                    color: ThemeColor.black,
+                    fontSize: 26,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                InkWell(
+                  child: Container(
+                    decoration: BoxDecoration(
+                        color: ThemeColor.lightGrey,
+                        borderRadius: BorderRadius.circular(12)),
+                    padding: const EdgeInsets.all(12),
+                    child: const Icon(
+                      Icons.arrow_back,
+                      color: Colors.white,
                     ),
                   ),
-                  InkWell(
-                    child: Container(
-                      decoration: BoxDecoration(
-                          color: ThemeColor.lightGrey,
-                          borderRadius: BorderRadius.circular(12)),
-                      padding: const EdgeInsets.all(12),
-                      child: const Icon(
-                        Icons.arrow_back,
-                        color: Colors.white,
-                      ),
-                    ),
-                    onTap: () {
-                      Navigator.pop(context);
-                    },
-                  )
-                ],
-              ),
+                  onTap: () {
+                    Navigator.pop(context);
+                  },
+                )
+              ],
             ),
-            Center(
-              child: ElevatedButton(
-                onPressed: () async {
-                  final results = await FilePicker.platform.pickFiles(
-                      allowMultiple: false,
-                      type: FileType.custom,
-                      allowedExtensions: ['pdf']);
-                  if (results == null) {
-                    ScaffoldMessenger.of(context).showSnackBar(
-                        const SnackBar(content: Text('No File Selected')));
-                  }
-                  final path = results!.files.single.path;
-                  final fileName = results.files.single.name;
-                  storage
-                      .uploadFile(path!, fileName)
-                      .then(((value) => print('done')));
-                  print(path);
-                  print(fileName);
-                },
-                child: Text("Upload"),
-              ),
-            )
-          ],
-        ),
-      ),
+          ),
+        ],
+      )),
     );
   }
 }
