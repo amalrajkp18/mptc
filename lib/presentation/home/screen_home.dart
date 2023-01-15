@@ -7,9 +7,14 @@ import '../../core/theme_color.dart';
 import '2015/screen_rev2015.dart';
 import '2021/screen_rev2021.dart';
 
-class ScreenHome extends StatelessWidget {
+class ScreenHome extends StatefulWidget {
   const ScreenHome({super.key});
 
+  @override
+  State<ScreenHome> createState() => _ScreenHomeState();
+}
+
+class _ScreenHomeState extends State<ScreenHome> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -45,7 +50,10 @@ class ScreenHome extends StatelessWidget {
                           color: Colors.white,
                         ),
                       ),
-                      onTap: () {},
+                      onTap: () async {
+                        // UserCredential userCredential =
+                        //     await FirebaseAuth.instance.signInAnonymously();
+                      },
                     )
                   ],
                 ),

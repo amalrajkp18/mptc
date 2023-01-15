@@ -26,4 +26,12 @@ class Storage {
     });
     return results;
   }
+
+  Future<String> downloadURL(String pdfName) async {
+    String downloadURL = await storage.ref('test/$pdfName').getDownloadURL();
+    return downloadURL;
+  }
+  getURL(String pdfName){
+    return "https://firebasestorage.googleapis.com/v0/b/studyapp-6c7e9.appspot.com/o/test%2F${pdfName}?alt=media";
+  }
 }
